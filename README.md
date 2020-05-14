@@ -84,7 +84,7 @@ The SplineSegment-System is the special thing about this spline. You can choose 
 
 #### LinearSplineSegment
 Straight segment between two points.
-
+![Image of linear Bezier]
 #### QuadraticSplineSegment
 Curved segment between 3 points
 
@@ -110,7 +110,7 @@ void Show();
 
 ## Author
 
-* **Paul Masan aka. Paulchen/Raining-Cloud**  [PurpleBooth](https://github.com/Raining-Cloud)
+* **Paul Masan aka. Paulchen/Raining-Cloud**  [Raining-Cloud](https://github.com/Raining-Cloud)
 
 ## License
 
