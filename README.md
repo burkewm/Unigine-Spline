@@ -54,9 +54,9 @@ The third has two paramters "start_speed" "end_speed" this segment has non const
 
 * Add a segment:
 You also can add a new Segment at the end of the Spline here you can use the methods:
-** AddQuadraticSegment()
-** AddQuadraticSegment()
-** AddCubicSegment()
+    * AddQuadraticSegment()
+    * AddQuadraticSegment()
+    * AddCubicSegment()
 
 It creates a new SplinePosition and then Creates a Segment between the last SplinePosition and the new one.
 The speed paramters are the same as explained in Create.
