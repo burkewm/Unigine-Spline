@@ -113,6 +113,54 @@ Visulize the SplinePosition:
 ```
 void Show();
 ```
+##Using the SplineDrive
+For the use of the SplineDrive I recommend to create a new C# Component.
+Create a new class and inheritance from the SplineDrive. In the 2 methods that you need to override
+you have to assign the position of the Object which you want to move.
+For example:
+```
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unigine;
+
+[Component(PropertyGuid = "2325bbf869764ef771065feae1d30e41302d92ac")]
+public class RWCarriers : Component
+{
+    [Parameter(Group ="Drive", Title ="SplineDrive Node", Tooltip ="Insert your node to follow the spline here")]
+    public Node driveNode;
+    
+    Drive splineDrive;
+    
+    private void Init()
+    {
+         splineDrive = new SplineDrive();
+         splineDrive.drive = driveNode;
+    }
+
+    private void Update()
+    {
+        splineDrive.Move(Game.iFps);
+    }
+
+    private class Drive : SplineDrive
+    {
+        
+        public Node drive;
+        
+        protected override void SetDrivePosition(vec3 pos)
+        {
+            drive.WorldPosition = pos;
+        }
+
+        protected override void SetDriveRotation(vec3 target)
+        {
+            drive.WorldLookAt(target);
+        }
+    }
+}
+```
 
 ## Author
 
