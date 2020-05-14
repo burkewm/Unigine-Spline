@@ -2,6 +2,7 @@
 
 This is a spline and a spline drive for the Unigine Engine.
 
+*Its in development so not all is working! I try my best to fix some errors*!
 ## Docs
 
 The Spline.cs contains the main spline with all classes needed for the spline. The SplineDrive.cs is for creating a object which moves along the spline.
@@ -54,9 +55,9 @@ The third has two paramters "start_speed" "end_speed" this segment has non const
 
 * Add a segment:
 You also can add a new Segment at the end of the Spline here you can use the methods:
-    * AddQuadraticSegment()
-    * AddQuadraticSegment()
-    * AddCubicSegment()
+    * AddQuadraticSegment(...)
+    * AddQuadraticSegment(...)
+    * AddCubicSegment(...)
 
 It creates a new SplinePosition and then Creates a Segment between the last SplinePosition and the new one.
 The speed paramters are the same as explained in Create.
@@ -78,11 +79,12 @@ void Show();
 
 ### SplineSegment-System
 
-All is based on Beziers.
+Its based on Beziers curves.
 The SplineSegment-System is the special thing about this spline. You can choose between 3 different Segments:
 
 #### LinearSplineSegment
 Straight segment between two points.
+
 #### QuadraticSplineSegment
 Curved segment between 3 points
 
@@ -91,7 +93,7 @@ Curved segment between 4 points
 
 ### SplinePosition
 The SplinePosition is mainly used for the start or end point for a SplineSegment.
-It knows it index in the Spline.
+It knows his index in the Spline.
 
 Visulize the SplinePosition:
 ```
