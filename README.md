@@ -98,7 +98,7 @@ Curved segment between 4 points
 ![](https://github.com/Raining-Cloud/Unigine-Spline/blob/master/ReadmeImages/cubic.png)
 
 ### SplinePosition
-The SplinePosition is mainly used for the start or end point for a SplineSegment.
+The SplinePosition is mainly used for the start or end point for a SplineSegment, the position is .
 It knows his index in the Spline.
 
 Visulize the SplinePosition:
@@ -107,7 +107,7 @@ void Show();
 ```
 
 ### CurvePoint
-Contains a vec3 for now its used for the AddQuadraticSegment and the CubicSplineSegment.
+Nearly the same as the SplinePosition, for now its used for the AddQuadraticSegment and the CubicSplineSegment.
 
 Visulize the SplinePosition:
 ```
