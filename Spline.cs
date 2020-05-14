@@ -50,7 +50,7 @@ public class Spline
     }
     public void DeleteSplinePoint(int index) 
     { 
-        points.Remove(GetSplinePoint(index)); 
+        points.Remove(points[index]); 
     }
 
 
@@ -488,19 +488,11 @@ public class Spline
         }
     }
 
-    public void RemoveSegment(int index)
+    public void DeleteSegment(int index)
     {
-        
+        segments.Remove(segments[index]);
     }
 
-    public void Save()
-    {
-
-    }
-    public void Load()
-    {
-
-    }
 
     public void Clear() //Clears the spline
     {
