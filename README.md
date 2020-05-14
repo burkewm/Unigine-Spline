@@ -84,12 +84,18 @@ The SplineSegment-System is the special thing about this spline. You can choose 
 
 #### LinearSplineSegment
 Straight segment between two points.
-![Image of linear Bezier]
+
+![](https://github.com/Raining-Cloud/Unigine-Spline/blob/master/ReadmeImages/straight.png)
+
 #### QuadraticSplineSegment
 Curved segment between 3 points
 
+![](https://github.com/Raining-Cloud/Unigine-Spline/blob/master/ReadmeImages/quadratic.png)
+
 #### CubicSplineSegment
 Curved segment between 4 points
+
+![](https://github.com/Raining-Cloud/Unigine-Spline/blob/master/ReadmeImages/cubic.png)
 
 ### SplinePosition
 The SplinePosition is mainly used for the start or end point for a SplineSegment.
@@ -114,6 +120,4 @@ void Show();
 
 ## License
 
-Feel free to edit, but i would appriciate it if you mention me (via github url).
-
-
+Feel free to use and edit, i would appriciate it if you mention me if you use it.
